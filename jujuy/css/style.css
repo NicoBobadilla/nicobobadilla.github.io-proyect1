@@ -1,0 +1,198 @@
+body {
+    background-color: rgb(9,88,67);
+    background: radial-gradient(circle, rgba(9,88,67,1) 20%, rgba(75,83,32,1) 100%);
+    font-family: 'Poppins', serif;
+    display: flexbox;
+    font-size: .8rem;
+}
+
+.menu {
+    background-color: peru;
+}
+
+.text {
+    text-align: center;
+    text-decoration: solid;
+    color: white;
+}
+
+.card {
+    background-color: peru;
+    animation-name: cartas;
+    animation-duration: 3.5s;
+    transition:all 0.3s ease;
+    transition: .2s;
+    width: 80%;
+    
+}
+ 
+.card:hover {
+    transform: scale(1.1); 
+}
+   
+
+@keyframes cartas{
+    0%{
+        transform: scale(.5);
+    }
+}    
+.cartas{
+    width: 60%;
+    align-items: center;
+}
+
+/*nav cel*/
+.menu {
+    box-sizing: border-box; 
+    padding: 0; 
+    margin: 0; 
+} 
+
+body { 
+    font-family: sans-serif; 
+} 
+nav {
+     background: #222; 
+     padding: 5px 20px;
+} 
+ul {
+     list-style-type: none; 
+} 
+a {
+     color: white; 
+     text-decoration: none;
+}
+a:hover { 
+    text-decoration: underline;
+ } 
+.logo a:hover { 
+    text-decoration: none;
+ } 
+ .menu li { 
+    font-size: 16px; 
+    padding: 15px 5px; 
+    white-space: nowrap; 
+} 
+.logo a, .toggle a {
+     font-size: 20px;
+} 
+.button.secondary {
+    border-bottom: 1px #444 solid; 
+}
+.menu { 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    align-items: center;
+} 
+.toggle {
+     order: 1; 
+} 
+.item.button { 
+    order: 2; 
+} 
+.item { 
+    width: 100%; 
+    text-align: center; 
+    order: 3; 
+    display: none; 
+}
+.item.active { 
+    display: block; 
+}
+/*nav tablet*/
+@media all and (min-width: 600px) 
+{ 
+.menu { justify-content: center; } 
+.logo { flex: 1; } 
+.toggle { flex: 1; text-align: right; } 
+.item.button { width: auto; order: 1; display: block; } 
+.toggle { order: 2; } 
+.button.secondary { border: 0; } 
+.button a { 
+    padding: 7.5px 15px; 
+    background: teal; 
+    border: 1px #006d6d solid; 
+} 
+.button.secondary a { background: transparent; } 
+.button a:hover { text-decoration: none; } 
+.button:not(.secondary) 
+a:hover { background: #006d6d; border-color: #005959; } 
+.button.secondary a:hover { color: #ddd; } 
+}
+/*nav destop*/
+@media all and (min-width: 900px) {
+     .item { display: block; width: auto; } 
+     .toggle { display: none; } 
+     .logo { order: 0; } 
+     .item { order: 1; } 
+     .button { order: 2; } 
+     .menu li { padding: 15px 10px; } 
+     .menu li.button { padding-right: 0; } 
+}
+/*puna*/
+
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+user agent stylesheet
+div {
+    display: block;
+}
+.container, .container-fluid, .container-lg, .container-md, 
+.container-sm, .container-xl, .container-xxl {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    margin-left: auto;
+    margin-right: auto;
+}
+body {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    
+}
+body {
+    margin: 1rem;
+    font-family: var(--bs-body-font-family);
+    font-size: var(--bs-body-font-size);
+    font-weight: var(--bs-body-font-weight);
+    line-height: var(--bs-body-line-height);
+    color: var(--bs-body-color);
+    text-align: justify ;
+    background-color : var(--bs-body-bg);
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+iframe {
+    display: flex;
+    justify-content: flex-end;
+}
+main {
+  
+    animation-duration: 2s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
